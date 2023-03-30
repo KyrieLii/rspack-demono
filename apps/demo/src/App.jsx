@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import { subA } from "pkg-b";
+import { b1 } from "pkg-b";
 import "./App.css";
 
-console.log(subA());
+console.log(b1);
 
 function App() {
   const [count, setCount] = useState(0);
