@@ -8,10 +8,6 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "./dist_webpack"),
-    library: {
-      name: "@[name]",
-      type: "umd",
-    },
   },
   devtool: false,
   plugins: [
@@ -22,8 +18,6 @@ module.exports = {
   resolve: {
     extensions: [".jsx", ".js"],
   },
-  //   externals: ["react", "react-dom"],
-  externalsType: "umd",
   module: {
     rules: [
       {
