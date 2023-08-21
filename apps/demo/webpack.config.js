@@ -16,7 +16,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: [".jsx", ".js"],
+    extensions: [".tsx", ".ts", ".js", ".jsx"],
   },
   module: {
     rules: [
@@ -34,6 +34,11 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: "@svgr/webpack",
+      },
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
       },
     ],
   },

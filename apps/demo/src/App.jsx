@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import { b1 } from "pkg-b";
+import { foo } from "pkg-b";
 import "./App.css";
 
-console.log(b1);
+console.log(foo);
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,7 +19,7 @@ function App() {
       <h1>Rspack + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          count is {count} {foo()}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
